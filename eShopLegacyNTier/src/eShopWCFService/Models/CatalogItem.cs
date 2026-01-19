@@ -33,5 +33,9 @@ namespace eShopWCFService.Models
 
         [DataMember]
         public CatalogBrand CatalogBrand { get; set; }
+
+        [NotMapped]
+        [DataMember]
+        public decimal? DiscountedPrice { get; set; }
     }
 }

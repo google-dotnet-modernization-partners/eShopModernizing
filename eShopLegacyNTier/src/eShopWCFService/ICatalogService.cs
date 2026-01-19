@@ -1,4 +1,4 @@
-﻿using eShopWCFService.Models;
+﻿using eShopLegacy.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,5 +32,7 @@ namespace eShopWCFService
         void RemoveCatalogItem(CatalogItem catalogItem);
         [OperationContract]
         DiscountItem GetDiscount(DateTime day);
+        [OperationContract]
+        void UpdateStock(int catalogItemId, int delta);
     }
 }

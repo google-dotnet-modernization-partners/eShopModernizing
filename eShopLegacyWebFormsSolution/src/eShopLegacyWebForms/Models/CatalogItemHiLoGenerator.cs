@@ -1,4 +1,5 @@
-﻿using eShopLegacyWebForms.Models;
+using eShopLegacy.Data.Models;
+using eShopLegacy.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,7 @@ namespace eShopLegacyWebForms.Models
         private int remainningLoIds = 0;
         private object sequenceLock = new object();
 
-        public int GetNextSequenceValue(CatalogDBContext db)
+        public int GetNextSequenceValue(EntityModel db)
         {
             lock (sequenceLock)
             {

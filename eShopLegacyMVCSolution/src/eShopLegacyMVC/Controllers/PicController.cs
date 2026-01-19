@@ -1,4 +1,4 @@
-﻿using eShopLegacyMVC.Services;
+using eShopLegacyMVC.Services;
 using log4net;
 using System.IO;
 using System.Net;

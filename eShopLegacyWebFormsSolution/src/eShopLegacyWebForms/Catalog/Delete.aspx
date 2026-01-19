@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Delete" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Delete.aspx.cs" Inherits="eShopLegacyWebForms.Catalog.Delete" %>
+<%@ Page Title="Delete" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Delete.aspx.cs" Inherits="eShopLegacyWebForms.Catalog.Delete" %>
 
 <asp:Content ID="Delete" ContentPlaceHolderID="MainContent" runat="server">
 

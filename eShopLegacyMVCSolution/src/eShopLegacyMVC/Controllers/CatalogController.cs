@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Net;
 using System.Web.Mvc;
-using eShopLegacyMVC.Models;
+using eShopLegacy.Data.Models;
 using eShopLegacyMVC.Services;
 using log4net;
 

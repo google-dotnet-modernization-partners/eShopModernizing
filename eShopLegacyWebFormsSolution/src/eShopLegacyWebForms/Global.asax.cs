@@ -1,7 +1,8 @@
-﻿using Autofac;
+using Autofac;
 using Autofac.Integration.Web;
-using eShopLegacyWebForms.Models;
-using eShopLegacyWebForms.Models.Infrastructure;
+using eShopLegacy.Data.Models;
+using eShopLegacy.Data;
+using eShopLegacy.Data.Models.Infrastructure;
 using eShopLegacyWebForms.Modules;
 using log4net;
 using System;
@@ -62,7 +63,7 @@ namespace eShopLegacyWebForms
 
             if (!mockData)
             {
-                Database.SetInitializer<CatalogDBContext>(container.Resolve<CatalogDBInitializer>());
+                Database.SetInitializer<EntityModel>(container.Resolve<CatalogDBInitializer>());
             }
         }
 

@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopLegacyMVC", "eShopLegacyMVCSolution\src\eShopLegacyMVC\eShopLegacyMVC.csproj", "{C4E50A92-30E2-4592-9A9A-A9D2B1B13A7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopLegacy.Utilities", "eShopLegacyMVCSolution\eShopLegacy.Utilities\eShopLegacy.Utilities.csproj", "{D466562E-F48C-4EF1-AE08-3A80B0ED9671}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopLegacy.Data", "eShopLegacyNTier\src\eShopLegacy.Data\eShopLegacy.Data.csproj", "{A5565555-68ED-4F7C-BC67-E2AB4396CB53}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVC", "MVC", "{AD633EAB-C8EE-4278-AB4D-1828CB345DE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopWinForms", "eShopLegacyNTier\src\eShopWinForms\eShopWinForms.csproj", "{AE32909C-9EE6-4ECE-B407-D23A15A1FEED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopWCFService", "eShopLegacyNTier\src\eShopWCFService\eShopWCFService.csproj", "{52E28A9A-68ED-4F7C-BC67-E2AB4396CB53}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NTier", "NTier", "{46827CC6-BFB5-4710-AFAC-08E009D9ACCF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebForms", "WebForms", "{373213F8-44EB-4022-A3AF-AFCECA02BDF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopLegacyWebForms", "eShopLegacyWebFormsSolution\src\eShopLegacyWebForms\eShopLegacyWebForms.csproj", "{4416714A-9BB8-480B-95B3-C2599598E3EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4E50A92-30E2-4592-9A9A-A9D2B1B13A7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4E50A92-30E2-4592-9A9A-A9D2B1B13A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4E50A92-30E2-4592-9A9A-A9D2B1B13A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4E50A92-30E2-4592-9A9A-A9D2B1B13A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D466562E-F48C-4EF1-AE08-3A80B0ED9671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D466562E-F48C-4EF1-AE08-3A80B0ED9671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D466562E-F48C-4EF1-AE08-3A80B0ED9671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D466562E-F48C-4EF1-AE08-3A80B0ED9671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5565555-68ED-4F7C-BC67-E2AB4396CB53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5565555-68ED-4F7C-BC67-E2AB4396CB53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5565555-68ED-4F7C-BC67-E2AB4396CB53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5565555-68ED-4F7C-BC67-E2AB4396CB53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE32909C-9EE6-4ECE-B407-D23A15A1FEED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE32909C-9EE6-4ECE-B407-D23A15A1FEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE32909C-9EE6-4ECE-B407-D23A15A1FEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE32909C-9EE6-4ECE-B407-D23A15A1FEED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52E28A9A-68ED-4F7C-BC67-E2AB4396CB53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52E28A9A-68ED-4F7C-BC67-E2AB4396CB53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52E28A9A-68ED-4F7C-BC67-E2AB4396CB53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52E28A9A-68ED-4F7C-BC67-E2AB4396CB53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4416714A-9BB8-480B-95B3-C2599598E3EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4416714A-9BB8-480B-95B3-C2599598E3EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4416714A-9BB8-480B-95B3-C2599598E3EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4416714A-9BB8-480B-95B3-C2599598E3EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C4E50A92-30E2-4592-9A9A-A9D2B1B13A7E} = {AD633EAB-C8EE-4278-AB4D-1828CB345DE6}
+		{D466562E-F48C-4EF1-AE08-3A80B0ED9671} = {AD633EAB-C8EE-4278-AB4D-1828CB345DE6}
+		{AE32909C-9EE6-4ECE-B407-D23A15A1FEED} = {46827CC6-BFB5-4710-AFAC-08E009D9ACCF}
+		{52E28A9A-68ED-4F7C-BC67-E2AB4396CB53} = {46827CC6-BFB5-4710-AFAC-08E009D9ACCF}
+		{4416714A-9BB8-480B-95B3-C2599598E3EC} = {373213F8-44EB-4022-A3AF-AFCECA02BDF2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BB9F6BE-2470-4251-80B7-0825E02EEA6F}
+	EndGlobalSection
+EndGlobal

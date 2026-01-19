@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="eShopLegacyWebForms._Default" %>
+<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="eShopLegacyWebForms._Default" %>
 
 <asp:Content ID="CatalogList" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -9,7 +9,7 @@
             </a>
         </p>
 
-        <asp:ListView ID="productList" ItemPlaceholderID="itemPlaceHolder" runat="server" ItemType="eShopLegacyWebForms.Models.CatalogItem">
+        <asp:ListView ID="productList" ItemPlaceholderID="itemPlaceHolder" runat="server" ItemType="eShopLegacy.Data.Models.CatalogItem">
             <EmptyDataTemplate>
                 <table>
                     <tr>

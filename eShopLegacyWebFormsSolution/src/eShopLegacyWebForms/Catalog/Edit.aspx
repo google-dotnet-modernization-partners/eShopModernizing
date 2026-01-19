@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Edit" Language="C#" Debug="true" MasterPageFile="~/Site.Master" AutoEventWireup="true" ValidateRequest="false" CodeBehind="Edit.aspx.cs" Inherits="eShopLegacyWebForms.Catalog.Edit" %>
+<%@ Page Title="Edit" Language="C#" Debug="true" MasterPageFile="~/Site.Master" AutoEventWireup="true" ValidateRequest="false" CodeBehind="Edit.aspx.cs" Inherits="eShopLegacyWebForms.Catalog.Edit" %>
 
 <asp:Content ID="Edit" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -29,7 +29,7 @@
                     <label class="control-label col-md-4">Brand</label>
                     <div class="col-md-8">
                         <asp:DropDownList ID="BrandDropDownList" runat="server"
-                            ItemType="eShopLegacyWebForms.Models.CatalogBrand"
+                            ItemType="eShopLegacy.Data.Models.CatalogBrand"
                             DataTextField="Brand"
                             DataValueField="Id"
                             CssClass="form-control">
@@ -41,7 +41,7 @@
                     <label class="control-label col-md-4">Type</label>
                     <div class="col-md-8">
                         <asp:DropDownList ID="TypeDropDownList" runat="server"
-                            ItemType="eShopLegacyWebForms.Models.CatalogType"
+                            ItemType="eShopLegacy.Data.Models.CatalogType"
                             DataTextField="Type"
                             DataValueField="Id"
                             CssClass="form-control">

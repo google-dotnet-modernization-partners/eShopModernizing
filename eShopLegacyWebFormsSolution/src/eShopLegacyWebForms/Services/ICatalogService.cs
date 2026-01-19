@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using eShopLegacyWebForms.Models;
+using System.Collections.Generic;
+using eShopLegacy.Data.Models;
 using System;
 using eShopLegacyWebForms.ViewModel;
 

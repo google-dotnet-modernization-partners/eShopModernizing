@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Details" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Details.aspx.cs" Inherits="eShopLegacyWebForms.Catalog.Details" %>
+<%@ Page Title="Details" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Details.aspx.cs" Inherits="eShopLegacyWebForms.Catalog.Details" %>
 
 <asp:Content ID="Details" ContentPlaceHolderID="MainContent" runat="server">
     <h2 class="esh-body-title">Details</h2>

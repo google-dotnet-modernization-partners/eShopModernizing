@@ -1,4 +1,4 @@
-﻿using eShopLegacy.Utilities;
+using eShopLegacy.Utilities;
 using eShopLegacyMVC.Services;
 using System;
 using System.Linq;

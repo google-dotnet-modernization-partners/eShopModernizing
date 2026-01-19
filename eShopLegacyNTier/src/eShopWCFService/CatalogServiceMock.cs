@@ -1,5 +1,5 @@
-﻿using eShopWCFService.Models;
-using eShopWCFService.Models.Infrastructure;
+﻿using eShopLegacy.Data.Models;
+using eShopLegacy.Data.Models.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -118,6 +118,29 @@ namespace eShopWCFService
         public DiscountItem GetDiscount(DateTime day)
         {
             throw new NotImplementedException();
+        }
+
+        public void UpdateStock(int catalogItemId, int delta)
+        {
+            var stockItem = catalogItemsStock.FirstOrDefault(x => x.CatalogItemId == catalogItemId);
+            if (stockItem != null)
+            {
+                stockItem.AvailableStock += delta;
+            }
+            else
+            {
+                // In a mock, we might just ignore or throw, but let's add a new entry for simplicity if needed
+                // For now, mirroring the logic: if not found, we can't update easily without a date context
+                // But the SP logic creates one. Let's just create a dummy one for today.
+                 var maxId = catalogItemsStock.Any() ? catalogItemsStock.Max(i => i.StockId) : 0;
+                 catalogItemsStock.Add(new CatalogItemsStock 
+                 { 
+                     StockId = ++maxId, 
+                     CatalogItemId = catalogItemId, 
+                     AvailableStock = delta, 
+                     Date = DateTime.Today 
+                 });
+            }
         }
     }
 }

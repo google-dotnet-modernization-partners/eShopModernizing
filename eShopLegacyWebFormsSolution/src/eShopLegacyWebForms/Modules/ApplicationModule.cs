@@ -1,6 +1,8 @@
-﻿using Autofac;
+using Autofac;
+using eShopLegacy.Data.Models;
+using eShopLegacy.Data;
 using eShopLegacyWebForms.Models;
-using eShopLegacyWebForms.Models.Infrastructure;
+using eShopLegacy.Data.Models.Infrastructure;
 using eShopLegacyWebForms.Services;
 
 namespace eShopLegacyWebForms.Modules
@@ -28,7 +30,7 @@ namespace eShopLegacyWebForms.Modules
                     .InstancePerLifetimeScope();
             }
 
-            builder.RegisterType<CatalogDBContext>()
+            builder.RegisterType<EntityModel>()
                 .InstancePerLifetimeScope();
 
             builder.RegisterType<CatalogDBInitializer>()

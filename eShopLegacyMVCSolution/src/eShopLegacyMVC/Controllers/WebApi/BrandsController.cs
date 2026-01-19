@@ -1,5 +1,6 @@
-﻿using eShopLegacy.Utilities;
+using eShopLegacy.Utilities;
 using eShopLegacyMVC.Services;
+using eShopLegacy.Data.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -19,7 +20,7 @@ namespace eShopLegacyMVC.Controllers.WebApi
         }
 
         // GET api/<controller>
-        public IEnumerable<Models.CatalogBrand> Get()
+        public IEnumerable<CatalogBrand> Get()
         {
             var brands = _service.GetCatalogBrands();
             return brands;

@@ -183,6 +183,10 @@
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Xml.Linq" />
+    <ProjectReference Include="..\..\..\eShopLegacyNTier\src\eShopLegacy.Data\eShopLegacy.Data.csproj">
+      <Project>{a5565555-68ed-4f7c-bc67-e2ab4396cb53}</Project>
+      <Name>eShopLegacy.Data</Name>
+    </ProjectReference>
     <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
     </Reference>
@@ -369,13 +373,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\CatalogBrand.cs" />
-    <Compile Include="Models\CatalogDBContext.cs" />
-    <Compile Include="Models\CatalogItem.cs" />
     <Compile Include="Models\CatalogItemHiLoGenerator.cs" />
-    <Compile Include="Models\CatalogType.cs" />
-    <Compile Include="Models\Infrastructure\CatalogDBInitializer.cs" />
-    <Compile Include="Models\Infrastructure\PreconfiguredData.cs" />
     <Compile Include="Modules\ApplicationModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CatalogService.cs" />

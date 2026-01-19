@@ -1,5 +1,6 @@
-﻿using System;
-using eShopLegacyWebForms.Models;
+using System;
+using eShopLegacy.Data.Models;
+using eShopLegacy.Data;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.SqlClient;
@@ -10,10 +11,10 @@ namespace eShopLegacyWebForms.Services
 {
     public class CatalogService : ICatalogService
     {
-        private CatalogDBContext db;
-        private CatalogItemHiLoGenerator indexGenerator;
+        private EntityModel db;
+        private eShopLegacyWebForms.Models.CatalogItemHiLoGenerator indexGenerator;
 
-        public CatalogService(CatalogDBContext db, CatalogItemHiLoGenerator indexGenerator)
+        public CatalogService(EntityModel db, eShopLegacyWebForms.Models.CatalogItemHiLoGenerator indexGenerator)
         {
             this.db = db;
             this.indexGenerator = indexGenerator;

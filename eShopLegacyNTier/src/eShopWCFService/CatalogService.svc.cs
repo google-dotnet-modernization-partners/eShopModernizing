@@ -1,4 +1,5 @@
-﻿using eShopWCFService.Models;
+﻿using eShopLegacy.Data;
+using eShopLegacy.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -38,6 +39,9 @@ namespace eShopWCFService
                 item.CatalogBrand = ents.CatalogBrands.FirstOrDefault(x => x.Id == item.CatalogBrandId);
                 item.CatalogType = ents.CatalogTypes.FirstOrDefault(x => x.Id == item.CatalogTypeId);
 
+                // Use the SQL Function to get the discounted price
+                item.DiscountedPrice = ents.Database.SqlQuery<decimal>("SELECT dbo.fn_GetDiscountedPrice(@p0)", id).FirstOrDefault();
+
                 return item;
             }
             else
@@ -57,9 +61,21 @@ namespace eShopWCFService
         {
             bool brandFilterIsNull = brandIdFilter == 0;
             bool typeFilterIsNull = typeIdFilter == 0;
-            return ents.CatalogItems.ToList().Where(x =>
+            var items = ents.CatalogItems.ToList().Where(x =>
                 (brandFilterIsNull ? true : x.CatalogBrandId == brandIdFilter) &&
                 (typeFilterIsNull ? true : x.CatalogTypeId == typeIdFilter)).ToList();
+
+            foreach (var item in items)
+            {
+                item.DiscountedPrice = ents.Database.SqlQuery<decimal>("SELECT dbo.fn_GetDiscountedPrice(@p0)", item.Id).FirstOrDefault();
+            }
+
+            return items;
+        }
+
+        public void UpdateStock(int catalogItemId, int delta)
+        {
+            ents.Database.ExecuteSqlCommand("EXEC dbo.sp_UpdateStock @p0, @p1", catalogItemId, delta);
         }
 
         public void CreateCatalogItem(CatalogItem catalogItem)

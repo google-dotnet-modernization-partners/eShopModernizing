@@ -15,7 +15,7 @@ namespace eShopWinForms.eShopServiceReference {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CatalogItem", Namespace="http://schemas.datacontract.org/2004/07/eShopWCFService.Models")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="CatalogItem", Namespace="http://schemas.datacontract.org/2004/07/eShopLegacy.Data.Models")]
     [System.SerializableAttribute()]
     public partial class CatalogItem : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -44,7 +44,7 @@ namespace eShopWinForms.eShopServiceReference {
         private string NameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PicturefilenameField;
+        private string PictureFileNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private decimal PriceField;
@@ -151,14 +151,14 @@ namespace eShopWinForms.eShopServiceReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Picturefilename {
+        public string PictureFileName {
             get {
-                return this.PicturefilenameField;
+                return this.PictureFileNameField;
             }
             set {
-                if ((object.ReferenceEquals(this.PicturefilenameField, value) != true)) {
-                    this.PicturefilenameField = value;
-                    this.RaisePropertyChanged("Picturefilename");
+                if ((object.ReferenceEquals(this.PictureFileNameField, value) != true)) {
+                    this.PictureFileNameField = value;
+                    this.RaisePropertyChanged("PictureFileName");
                 }
             }
         }
@@ -188,7 +188,7 @@ namespace eShopWinForms.eShopServiceReference {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CatalogBrand", Namespace="http://schemas.datacontract.org/2004/07/eShopWCFService.Models")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="CatalogBrand", Namespace="http://schemas.datacontract.org/2004/07/eShopLegacy.Data.Models")]
     [System.SerializableAttribute()]
     public partial class CatalogBrand : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -249,7 +249,7 @@ namespace eShopWinForms.eShopServiceReference {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CatalogType", Namespace="http://schemas.datacontract.org/2004/07/eShopWCFService.Models")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="CatalogType", Namespace="http://schemas.datacontract.org/2004/07/eShopLegacy.Data.Models")]
     [System.SerializableAttribute()]
     public partial class CatalogType : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -310,7 +310,7 @@ namespace eShopWinForms.eShopServiceReference {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CatalogItemsStock", Namespace="http://schemas.datacontract.org/2004/07/eShopWCFService")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="CatalogItemsStock", Namespace="http://schemas.datacontract.org/2004/07/eShopLegacy.Data.Models")]
     [System.SerializableAttribute()]
     public partial class CatalogItemsStock : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -403,7 +403,7 @@ namespace eShopWinForms.eShopServiceReference {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="DiscountItem", Namespace="http://schemas.datacontract.org/2004/07/eShopWCFService.Models")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="DiscountItem", Namespace="http://schemas.datacontract.org/2004/07/eShopLegacy.Data.Models")]
     [System.SerializableAttribute()]
     public partial class DiscountItem : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Create" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" ValidateRequest="false" CodeBehind="Create.aspx.cs" Inherits="eShopLegacyWebForms.Catalog.Create" %>
+<%@ Page Title="Create" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" ValidateRequest="false" CodeBehind="Create.aspx.cs" Inherits="eShopLegacyWebForms.Catalog.Create" %>
 
 <asp:Content ID="Create" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -27,7 +27,7 @@
                 <div class="col-md-3">
                     <asp:DropDownList ID="Brand" runat="server"
                         SelectMethod="GetBrands"
-                        ItemType="eShopLegacyWebForms.Models.CatalogBrand"
+                        ItemType="eShopLegacy.Data.Models.CatalogBrand"
                         DataTextField="Brand"
                         DataValueField="Id"
                         CssClass="form-control">
@@ -40,7 +40,7 @@
                 <div class="col-md-3">
                     <asp:DropDownList ID="Type" runat="server"
                         SelectMethod="GetTypes"
-                        ItemType="eShopLegacyWebForms.Models.CatalogType"
+                        ItemType="eShopLegacy.Data.Models.CatalogType"
                         DataTextField="Type"
                         DataValueField="Id"
                         CssClass="form-control">

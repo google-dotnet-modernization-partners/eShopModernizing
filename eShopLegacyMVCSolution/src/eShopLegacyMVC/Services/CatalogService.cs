@@ -1,4 +1,6 @@
-﻿using eShopLegacyMVC.Models;
+using eShopLegacy.Data.Models;
+using eShopLegacy.Data;
+using eShopLegacyMVC.Models;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -9,10 +11,10 @@ namespace eShopLegacyMVC.Services
 
     public class CatalogService : ICatalogService
     {
-        private CatalogDBContext db;
+        private EntityModel db;
         private CatalogItemHiLoGenerator indexGenerator;
 
-        public CatalogService(CatalogDBContext db, CatalogItemHiLoGenerator indexGenerator)
+        public CatalogService(EntityModel db, CatalogItemHiLoGenerator indexGenerator)
         {
             this.db = db;
             this.indexGenerator = indexGenerator;
